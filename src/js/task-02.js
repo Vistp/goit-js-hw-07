@@ -7,31 +7,16 @@ const ingredients = [
   'Приправы',
 ];
 const ingredientsEl = document.querySelector('#ingredients');
-// создали ingredientsEl - получили доступ к HTML элементу с #ingredients
 
-
-ingredients.forEach(element =>{
+const elements = ingredients.map(element => {
   const itemEl = document.createElement('li');
 
   itemEl.textContent = element;
-  console.log(itemEl);
-  ingredientsEl.appendChild(itemEl);
+  return itemEl;
 }
 )
-// перебрали массив ingredients - создали для каждого элемента лишку, добавили
-// в нее текстовый контент из массива
+ingredientsEl.append(...elements);
 
-// const elements = ingredients.map(element => {
-//   const itemEl = document.createElement('li');
+// console.log(ingredientsEl);
+// console.log(ingredients);
 
-//   itemEl.textContent = element;
-//   return itemEl;
-// }
-// )
-// ingredientsEl.append(...elements);
-// через мап решение
-
-console.log(ingredientsEl);
-console.log(ingredients);
-
-// попробовать создать по одному элементу и добавить за один раз 

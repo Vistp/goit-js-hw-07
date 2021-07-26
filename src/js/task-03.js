@@ -24,11 +24,10 @@ const makeImagesGalleryElement = image => {
   </li>`
 }
 
-
 const galleryEl = document.querySelector('#gallery');
 const makeImagesGallery = images
   .map(makeImagesGalleryElement)
   .join(' ');
 
-console.log(makeImagesGallery);
+// console.log(makeImagesGallery);
 galleryEl.insertAdjacentHTML('beforeend', makeImagesGallery);
