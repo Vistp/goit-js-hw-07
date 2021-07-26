@@ -1,0 +1,10 @@
+#gallery {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__item:not(:last-child) {
+  margin-right: 30px;
+}

@@ -1,0 +1,12 @@
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  margin-top: 40px;
+  border-radius: 20%;
+}
+
+.item:not(:last-child) {
+  margin-right: 20px;
+}
